@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet prefetch" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&amp;display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+<body>
+
+<div class="borderStyle">
+<div class="tabHeader">
+    <h1>Podaj swoje dane:</h1>
+</div>
+<div class="tabContent">
+<form action="InputServlet" method="post">
+    <!-- Reszta kodu bez zmian -->
+
+    <div class="dataStyle">
+    <div class="verticalSpace">Nazwa użytkownika:</div>
+    <input type="text" name="username" class="inputStyle"><br><br>
+    <div class="verticalSpace">Hasło:</div>
+    <input type="password" name="pass" class="inputStyle"><br>
+    </div>
+
+    <br>
+    <div class="dataStyle verticalSpace">Płeć:</div>
+    <div class="choiceStyle">
+    <input type="radio" name="gender" value="male">Mężczyzna<br>
+    <input type="radio" name="gender" value="female">Kobieta<br>
+    </div>
+
+    <br>
+    <div class="dataStyle verticalSpace">Języki programowania:</div>
+    <div class="choiceStyle">
+    <input type="checkbox" name="hobby" value="Cpp"> C++<br>
+    <input type="checkbox" name="hobby" value="Java"> Java<br>
+    <input type="checkbox" name="hobby" value="Python"> Python<br>
+    <input type="checkbox" name="hobby" value="JavaScript"> JavaScript<br>
+    <input type="checkbox" name="hobby" value="TypeScript"> TypeScript<br>
+    <input type="checkbox" name="hobby" value="jQuery"> jQuery<br>
+    <input type="checkbox" name="hobby" value="C#"> C#<br>
+    <input type="submit" value="Wyślij" class="buttonStyle"></div>
+</form>
+</div>
+</div>
+</body>
+</html>
